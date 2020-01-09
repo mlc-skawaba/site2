@@ -62,7 +62,7 @@ export default {
   */
   generate: {
     routes() {
-      return axios.get(`https://xshn7hqya2.execute-api.ap-northeast-1.amazonaws.com/Prod/recipes?size=10`)
+      return axios.get(`https://xshn7hqya2.execute-api.ap-northeast-1.amazonaws.com/Prod/recipes`)
       .then((res) => {
         return res.data.data.map((data) => {
           return {
