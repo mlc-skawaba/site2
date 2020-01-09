@@ -41,11 +41,7 @@ export default {
   ** Build configuration
   */
   build: {
-    // hardSource: true,
-    extend(config, ctx) {
-      const HardSourceWebpackPlugin = require('hard-source-webpack-plugin')
-      config.plugins.push(new HardSourceWebpackPlugin())
-    },
+    hardSource: true,
     /*
     ** Run ESLint on save
     */
