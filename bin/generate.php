@@ -15,7 +15,7 @@ foreach($data['data'] as $item) {
         if  ($item['lang'] === 'ja' ) {
             $filename = $item['recipe_code'] . '.html';
             $content = $tpl->fetch('/page/recipe.phtml', $item);
-            $r = file_put_contents('./dist/' . $filename, $content, LOCK_EX);
+            $r = file_put_contents('./htdocs/' . $filename, $content, LOCK_EX);
         }
     }
 }
