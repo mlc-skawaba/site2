@@ -1,5 +1,9 @@
 <?php
-
+	
+ini_set('display_erros', 0);
+error_reporting(E_ALL ^ E_NOTICE);
+date_default_timezone_set('Asia/Tokyo');
+	
 require_once './vendor/autoload.php';
 
 define('__APPROOT__', dirname(__DIR__));
