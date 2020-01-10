@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="static">
+<head>
+
+<?= $this->fetch('/include/head.html') ?>
+
+<title>Site Top</title>
+</head>
+<body>
+
+<?= $this->fetch('/include/header.html') ?>
+
+<div class="container-fluid">
+  <div class="row flex-xl-nowrap">
+
+    <?= $this->fetch('/include/sidebar.html') ?>
+
+    <main class="col-12 col-md-9 col-xl-8 bd-content">
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+
+      <dl>
+        <dt>lang</dt>
+        <dd><?= $lang ?></dd>
+        <dt>name</dt>
+        <dd><?= $name ?></dd>
+        <dt>date</dt>
+        <dd><?= date('Y-m-d H:i:s', strtotime($begin_date)) ?></dd>
+        <dt>recipe_code</dt>
+        <dd><?= $recipe_code ?></dd>
+        <dt>jancode</dt>
+        <dd><?= $jancode ?></dd>
+      </dl>
+
+      <div class="markdown-body">
+      <?= $markdown->parse($body) ?>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<?= $this->fetch('/include/footer.html') ?>
+
+</body>
+</html>

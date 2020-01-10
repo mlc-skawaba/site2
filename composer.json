@@ -1,0 +1,18 @@
+{
+    "require": {
+      "php": ">=7.1.0",
+      "cebe/markdown": "^1.2"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+      "psr-4": {
+        "": "src/classes"
+      },
+      "files": [
+        "src/functions.php"
+      ]
+    },
+    "scripts": {
+    }
+}
