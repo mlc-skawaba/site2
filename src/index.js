@@ -63,8 +63,8 @@ window.addEventListener('load', () => {
         address: $email.value, // The unique identifier for the recipient. For example, an address could be a device token, email address, or mobile phone number.
         attributes: {
             // Custom attributes that your app reports to Amazon Pinpoint. You can use these attributes as selection criteria when you create a segment.
-            hobbies: ['piano', 'hiking'],
-            sendmail: 1
+            hobbies: ['piano', 'hiking']
+        //    sendmail: 1
         },
         channelType: 'EMAIL', // The channel type. Valid values: APNS, GCM
         userAttributes: {
