@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="ミツエーリンクスのコラム「{{TITLE}}}」です。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}} | コラム | ミツエーリンクス</title>
+<link rel="stylesheet" href="/cmn/css/basic.css" media="screen,print">
+<link rel="stylesheet" href="/cmn/css/print.css" media="print">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="knowledge">
+
+<header>
+<div class="header_content" itemscope itemtype="http://schema.org/Corporation">
+<a href="/" id="logo" itemprop="url"><img src="/cmn/img/logo.png" alt="ミツエーリンクス" itemprop="logo"></a>
+<div class="management_ideology">Smart Communication Design Company</div>
+<form method="get" action="/search/index.php"><label for="site_search">サイト内検索</label><input type="text" maxlength="100" name="keyword" id="site_search"><button type="submit" id="btn_site_search"><img src="/cmn/img/btn_search.png" alt="検索"></button><input type="hidden" name="start" value="1"></form>
+<nav>
+<ul class="utility">
+<li class="home"><a href="/">ホーム</a></li><li class="sitemap"><a href="/sitemap/">サイトマップ</a></li><li class="contact"><a href="/contact/">お問い合わせ</a></li><li class="lang"><a href="/english/" lang="en" hreflang="en">English</a></li>
+</ul>
+<ul class="global_nav" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+<li itemprop="name" class="service"><a itemprop="url" href="/service/">サービス</a></li>
+<li itemprop="name" class="our_work"><a itemprop="url" href="/our_work/">実績紹介</a></li>
+<li itemprop="name" class="knowledge"><em aria-current="true"><a itemprop="url" href="/knowledge/">ナレッジ</a></em></li>
+<li itemprop="name" class="seminar"><a itemprop="url" href="/seminar/">セミナー</a></li>
+<li itemprop="name" class="news"><a itemprop="url" href="/news/">ニュース</a></li>
+<li itemprop="name" class="company"><a itemprop="url" href="/company/">会社情報</a></li>
+<li itemprop="name" class="careers"><a itemprop="url" href="/careers/">採用情報</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="content">
+<div itemprop="breadcrumb" class="topic_path"><a href="/"><img src="/cmn/img/icon_home.gif" alt="ホーム"></a> &gt; <a href="/knowledge/">ナレッジ</a> &gt; <a href="/knowledge/column/">コラム</a> &gt; <a href="/knowledge/column/2019.html">2019年</a> &gt; <em aria-current="page">1年でほぼ2倍、次世代通信プロトコル「HTTP/2」急増の“もう1つの事情”</em></div>
+<div id="main_content">
+
+<h1 class="hdg_l1_1">1年でほぼ2倍、次世代通信プロトコル「HTTP/2」急増の“もう1つの事情”</h1>
+
+<div class="column_meta_2">
+<div class="date">2018年09月14日</div>
+<div class="writer">システム本部　第二部　マネージャー<br>榛葉 裕幸</div>
+</div>
+
+<div><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">通信プロトコルレベルでWebページの表示速度改善が期待できる「HTTP/2&#xff08;<a href="https://httpwg.org/specs/rfc7540.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">Hypertext Transfer Protocol Version 2</a>&#xff09;」。<a href="https://www.nic.ad.jp/ja/newsletter/No24/090.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">RFC</a>化から3年を経過し、日ごろWebパフォーマンスやWeb品質に関心が高いWeb担当者さまは、ご存知の方も多いのではないでしょうか。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">Q-Successによると、HTTP/2を導入済みのWebサイトの割合が過去最高を更新。このコラムを書いている2018年9月13日現在、29.9%と、3割到達が目前です&#xff08;<a href="https://w3techs.com/technologies/details/ce-http2/all/all" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">Usage of HTTP/2 for websites</a>&#xff09;。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">もちろん、そこにはGoogleの<a href="https://webmaster-ja.googleblog.com/2018/01/using-page-speed-in-mobile-search.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">スピードアップデート</a>が与えた影響も大きいと思いますが、それ以外にも背景がありそうです。いま企業Webでは、何が起きているのでしょう。</p><h2 class="user-token-hdg_l2_1" style="margin:0px 0px 18px;padding:5px 15px;border-radius:4px;background:rgb( 235 , 235 , 235 );font-size:1.125em;font-weight:bold">年々、重くて遅くなるWebサイト</h2><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">iPhoneの登場から10年が過ぎ、国内のスマートフォンの世帯普及率はPCを上まわり75.1%に達しました&#xff08;<a href="http://www.soumu.go.jp/johotsusintokei/statistics/data/180525_1.pdf" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">平成29年通信利用動向調査</a>&#xff09;。企業Webが消費者との重要な顧客接点となるなか、消費者がWebを閲覧する環境は完全にモバイル全盛です。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">年々、モバイルデバイスは高解像度になり大画面化もすすんでいます。比例して、Webページのデータ量も増加傾向にあります。実際、<a href="https://httparchive.org/" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">HTTP Archive</a>でここ5年のデータ転送量&#xff08;<a href="https://httparchive.org/reports/state-of-the-web?start&#61;2013_01_01&amp;end&#61;2017_12_15&amp;view&#61;list#bytesTotal" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">Total Kilobytes</a>&#xff09;の変化をみると、デスクトップがほぼ倍増で、モバイルは4倍も増えています。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">企業サイトでも高精細の画像ファイルや細かなCSSを読み込むグラフィカルでリッチなWebページが増えていますが、従来仕様の通信プロトコルHTTP/1.1では、こうしたページの読込み速度向上には限界がありました。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">また、モバイル通信環境下では通信品質にバラツキがあるため速度遅延を実感しやすいといわれます&#xff08;<a href="https://tech.nikkeibp.co.jp/atcl/nxt/column/18/00255/042500010/" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">不満噴出のスマホ通信品質、携帯11社の遅延を計測</a>&#xff09;。いわゆるレイテンシの制約です。Webページの読込み速度はレイテンシに依存して、レイテンシの値が大きければ大きいほど低下するとされます&#xff08;<a href="https://hpbn.co/primer-on-web-performance/#latency-as-a-performance-bottleneck" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">Latency as a Performance Bottleneck</a>&#xff09;。HTTP/2の主な目標は、レイテンシの短縮です&#xff08;<a href="https://developers.google.com/web/fundamentals/performance/http2/?hl&#61;ja" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">HTTP/2 の概要</a>&#xff09;。</p><h2 class="user-token-hdg_l2_1" style="margin:0px 0px 18px;padding:5px 15px;border-radius:4px;background:rgb( 235 , 235 , 235 );font-size:1.125em;font-weight:bold">企業Webサイトに迫りくる“10月危機”</h2><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">ただ、モバイル端末の普及は今にはじまったことではありませんし、モバイル通信環境も3GからLTEに4Gへと日々進化しています。HTTP/2比率が急上昇している理由は、モバイル全盛だけではなさそうです。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">ここでふたたびQ-Successをみると、常時SSL/TLS&#xff08;HTTPS&#xff09;対応済みWebサイトの割合が1年でほぼ倍増しています&#xff08;<a href="https://w3techs.com/technologies/details/ce-httpsdefault/all/all" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">Usage of Default protocol https for websites</a>&#xff09;。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">最大シェアを持つWebブラウザChromeは、2018年7月にリリースされたChrome 68から、非HTTPSサイトにアクセスすると「保護されていない通信」と警告が表示されるようになりました。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">さらに、2018年10月からは、ユーザーがHTTPページにデータを入力するときに表示される「保護されていません」の警告を「赤」に変更する、と予告されています&#xff08;<a href="https://webmaster-ja.googleblog.com/2018/07/marking-HTTP-as-not-secure.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">Chrome のセキュリティにとって大きな一歩: HTTP ページに「保護されていません」と表示されるようになります</a>&#xff09;。何より信用第一の企業Webサイトにとって、常時SSL対応は待ったなしの状況です。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">実は、常時SSLとHTTP/2は密接に関連しています。HTTP/2の仕様では、必ずしもHTTPS通信を前提にしていませんが、すべてのHTTP/2対応ブラウザはHTTPSでしかHTTP/2を利用できません&#xff08;HTTP/2 over TLS&#xff09;。実質的に、HTTP/2を利用するには常時SSL化が前提となります。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">また、従来規格&#xff08;HTTP/1.1&#xff09;で常時SSL化した場合、Webサイトの構成によっては表示速度の低下が懸念されます。しかし、常時SSL対応にあわせてHTTP/2にアップグレードすることで、こうしたネガティブなインパクトを無効化し、さらなるパフォーマンスの改善が期待できます。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">実際、GoogleはHTTP/2による常時SSLサイトの高速化を、HTTPSを普及させるためのインセンティブとして意識しているようです&#xff08;<a href="https://qiita.com/takoratta/items/5bfe926a6421a14c1f94#http2" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">HTTPSにまつわる怪しい伝説を検証する - Google I/O 2016のセッションから</a>&#xff09;。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">つまり、HTTPSの普及が、HTTP/2比率上昇のもう1つの事情と言えるのではないでしょうか。</p><h2 class="user-token-hdg_l2_1" style="margin:0px 0px 18px;padding:5px 15px;border-radius:4px;background:rgb( 235 , 235 , 235 );font-size:1.125em;font-weight:bold">まとめ</h2><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">Webページの表示パフォーマンスの高速化と安全なインターネット利用を促進するHTTP/2は、今、本格的な普及期を迎えています。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">しかし、HTTP/2も常時SSL化もサーバー側の対応が必要となりますが、現在の環境を変更するのは敷居が高く難しいケースが多くあります。そのため近年、Webサイトリニューアルに合わせて、Webサーバーやホスティングサービスも刷新する事例が増えています。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">当社は、Webホスティングサービス「<a href="https://www.mitsue.co.jp/service/system_development/cloud_hosting/aws_webrelease.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">クラウドCMS on AWS</a>」全プランにおいて、次世代通信プロトコル「HTTP/2」を標準提供しています。「クラウドCMS on AWS」で運営される、常時SSL化されたすべてのWebサイトは、特別な手続きや設定変更を行うことなくHTTP/2をご利用いただけます。</p><ul style="margin:0px 15px 15px;padding:0px;list-style-type:none"><li style="margin:0px;padding:0px;font-size:0.8125em"><a href="https://www.mitsue.co.jp/service/system_development/cloud_hosting/aws_webrelease.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">クラウドCMS on AWS - WebRelease</a> ミツエーリンクスのWebサイト構築・運用経験から培ったノウハウをベースに、750社を超える導入実績を持ち、企業サイト運営に必要な機能を備えたエンタープライズCMS「WebRelease」と、企業サイトに最適なセキュリティ対策、可用性・耐障害性を考慮した構成済みサーバー環境をパッケージングし、グローバルパブリッククラウド「Amazon Web Services&#xff08;AWS&#xff09;」で提供するマネージド型ホスティングサービスです。</li></ul></div>
+<div class="nav_archive_1">
+<ul>
+<li class="prev"><a href="40.html"><span class="mark">前の記事へ</span>新卒研修の改善は「会社の改善」</a></li>
+<li class="next"><a href="52.html"><span class="mark">次の記事へ</span>Web担当者必見！リニューアル準備に効くガイドライン5選【CMS/Webホスティング編】</a></li>
+</ul>
+</div>
+
+<div class="nav_back_1"><a href="/knowledge/column/2019.html"><span class="text">2019年のコラム一覧に戻る</span></a></div>
+
+<div class="nav_contact_1 mailnews">
+<p>メールニュースでは、本サイトの更新情報や業界動向などをお伝えしています。ぜひご購読ください。</p>
+<div class="button"><a href="/form/index.php?id=M2">メールニュース登録</a></div>
+</div>
+
+<!-- /#main_content --></div>
+<div id="local_nav">
+<nav>
+<ul class="adjacent_items">
+<li><a href="/knowledge/column/">コラム</a></li>
+<li><a href="/knowledge/blog/">Blog</a></li>
+<li><a href="/knowledge/colors/">広報誌「MITSUE COLORS」</a></li>
+<li><a href="https://www.mitsue.co.jp/form/index.php?id=M2">メールニュース</a></li>
+<li><a href="/knowledge/social_media_accounts.html">ソーシャルメディア 公式アカウント</a></li>
+<li><a href="/knowledge/marketing/">Webマーケティング資料集</a></li>
+<li><a href="/knowledge/glossary.html">用語集</a></li>
+</ul>
+</nav>
+</div>
+<!-- /#content --></main>
+
+<footer>
+<div class="footer_content">
+<dl>
+<dt>信頼を支えるマネジメントシステム</dt>
+<dd><ul><li><img src="/cmn/img/iso.png" alt="品質マネジメントシステム ANAB BSI FS559479/ISO9001 情報セキュリティマネジメントシステム ANAB BSI ISMS IS60384/ISO27001（認証取得事業所：本社およびスタジオ）"></li><li><a href="https://privacymark.jp/" class="privacy"><img src="/cmn/img/p_mark.png" alt="プライバシーマーク 10820129(09)"></a></li></ul></dd>
+</dl>
+<ul class="banner">
+<li><a href="https://videocenter.mitsue.co.jp/" class="videocenter"><img src="/cmn/img/banner_videocenter.gif" alt="ミツエーリンクスの動画ポータルサイト Video Center"></a></li>
+<li><a href="https://www.w3.org/Consortium/Member/Testimonial/Home/home-899" class="w3c"><img src="/cmn/img/w3c.png" alt="ミツエーリンクスはW3Cの会員です。"></a></li>
+</ul>
+<ul class="utility">
+<li class="privacy_policy"><a href="/privacy_policy.html">プライバシーポリシー</a></li>
+<li class="site_policy"><a href="/site_policy.html">サイトポリシー</a></li>
+<li class="help"><a href="/help/">ヘルプ</a></li>
+<li class="contact"><a href="/contact/">お問い合わせ</a></li>
+</ul>
+<small class="copyright">&copy; Mitsue-Links Co.,Ltd.</small>
+</div>
+</footer>
+
+<script src="/cmn/js/mjl.js"></script>
+<script src="/cmn/js/run.js"></script>
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+
+</body>
+</html>

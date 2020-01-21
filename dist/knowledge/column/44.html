@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="ミツエーリンクスのコラム「{{TITLE}}}」です。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}} | コラム | ミツエーリンクス</title>
+<link rel="stylesheet" href="/cmn/css/basic.css" media="screen,print">
+<link rel="stylesheet" href="/cmn/css/print.css" media="print">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="knowledge">
+
+<header>
+<div class="header_content" itemscope itemtype="http://schema.org/Corporation">
+<a href="/" id="logo" itemprop="url"><img src="/cmn/img/logo.png" alt="ミツエーリンクス" itemprop="logo"></a>
+<div class="management_ideology">Smart Communication Design Company</div>
+<form method="get" action="/search/index.php"><label for="site_search">サイト内検索</label><input type="text" maxlength="100" name="keyword" id="site_search"><button type="submit" id="btn_site_search"><img src="/cmn/img/btn_search.png" alt="検索"></button><input type="hidden" name="start" value="1"></form>
+<nav>
+<ul class="utility">
+<li class="home"><a href="/">ホーム</a></li><li class="sitemap"><a href="/sitemap/">サイトマップ</a></li><li class="contact"><a href="/contact/">お問い合わせ</a></li><li class="lang"><a href="/english/" lang="en" hreflang="en">English</a></li>
+</ul>
+<ul class="global_nav" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+<li itemprop="name" class="service"><a itemprop="url" href="/service/">サービス</a></li>
+<li itemprop="name" class="our_work"><a itemprop="url" href="/our_work/">実績紹介</a></li>
+<li itemprop="name" class="knowledge"><em aria-current="true"><a itemprop="url" href="/knowledge/">ナレッジ</a></em></li>
+<li itemprop="name" class="seminar"><a itemprop="url" href="/seminar/">セミナー</a></li>
+<li itemprop="name" class="news"><a itemprop="url" href="/news/">ニュース</a></li>
+<li itemprop="name" class="company"><a itemprop="url" href="/company/">会社情報</a></li>
+<li itemprop="name" class="careers"><a itemprop="url" href="/careers/">採用情報</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="content">
+<div itemprop="breadcrumb" class="topic_path"><a href="/"><img src="/cmn/img/icon_home.gif" alt="ホーム"></a> &gt; <a href="/knowledge/">ナレッジ</a> &gt; <a href="/knowledge/column/">コラム</a> &gt; <a href="/knowledge/column/2019.html">2019年</a> &gt; <em aria-current="page">常識化する常時SSL/TLS対応</em></div>
+<div id="main_content">
+
+<h1 class="hdg_l1_1">常識化する常時SSL/TLS対応</h1>
+
+<div class="column_meta_2">
+<div class="date">2018年07月20日</div>
+<div class="writer">取締役兼CTO<br>木達 一仁</div>
+</div>
+
+<div><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">7月24日&#xff08;日本時間では7月25日&#xff09;、デスクトップ向けWebブラウザで比較的高いシェアを占めるGoogle Chromeにつき、その安定版がバージョン68にアップデートされます。Chrome 68ではかねてより予告されてきた通り&#xff08;Googleウェブマスター向け公式ブログの記事「<a href="https://webmaster-ja.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">保護されたウェブの普及を目指して</a>」参照&#xff09;、すべてのHTTPサイトで「保護されていません」という警告が表示されるようになります。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">開発ベンダーの立場からすれば、通信の盗聴やなりすましといった脅威からユーザーを守り、安心してWebブラウザを使っていただけるようにするのは当然のこと。であればこそ、Webサーバーにあるコンテンツを暗号化通信で送り届けていないHTTPサイトについて、上述のような措置を取るのはごく自然なことと思えます。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">Chromeにおける注意喚起は、今後さらに強化される見通しです。Google Developers Japanの記事、「<a href="https://developers-jp.googleblog.com/2018/06/evolving-chromes-security-indicators.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">Chrome の進化するセキュリティ インジケーター</a>」によりますと、10月にリリース予定のバージョン70では、HTTPページにある入力フォームで入力しようとすると、警告がグレーから赤に変わり、ユーザーに対しさらに積極的に注意を促すようになります。対照的に、常時SSL/TLS対応済みのHTTPSサイトについては9月にリリース予定のバージョン69以降、暗号化通信がさも当然であるかのように、目立たない表示に変更されます。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">かつてはHTTPサイトが大半を占めていたWebですが、今や状況は逆転しました。Googleの公開する透明性レポート「<a href="https://transparencyreport.google.com/https/overview" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">ウェブ上での HTTPS 暗号化</a>」によれば、Web全体におけるHTTPSサイトの割合は着実に増加しているようです。「世界各国におけるChromeでのHTTPSの使用状況」のグラフを見ますと、アメリカやドイツ、ロシアなどと比べ日本は遅れを取っているものの、それでも6割以上のページがHTTPSを経由して読み込まれています。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">企業のWebサイトに限定しますと、どのような状況なのでしょうか&#xff1f;　その点については、株式会社フィードテイラーが調査・公開されている「<a href="https://www.feedtailor.jp/report_aossl_201807/" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">常時SSL化 調査レポート 上場企業サイト対応状況&#xff08;2018年7月版&#xff09;</a>」が参考になります。同レポートによれば、全上場企業の56.8%が常時SSL/TLS対応を終えており、先月の調査と比べ2.5ポイント増加しているとのこと。逆に言えば、4割以上の上場企業が何らかの理由で常時SSL/TLS対応を先送りにしているか、もしくは対応しない判断を&#xff08;現時点では&#xff09;しているようです。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">常時SSL/TLS対応を行うことの意義は、Webサイトのユーザーをセキュリティリスクから守ったり、あるいはブラウザの警告表示を防ぎユーザーの不信感を招かないようにすることにとどまりません。HTTPSの採用が前提として必要な技術、例えばHTTP/2やService Worker、Geolocation APIなどを用いた機能拡張が可能となるメリットもあります。そういうわけで、中長期的な運用を見込む企業Webサイトであれば常時SSL/TLS対応は必要不可欠であり、論点はその是非ではなく「いつ」対応するかであると考えます。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">冒頭で触れたChrome 68のリリースを、あたかも企業が常時SSL/TLS対応を完了させる期限であるかのように喧伝している向きもあるようですが、必ずしも焦る必要は無いでしょう。Webサイトが常時SSL/TLSに未対応の企業の中には、サイトの規模が大きいがゆえに、次期リニューアルですとか配信インフラの見直しの時期に合わせて対応を計画されているところもあるかと思います。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">確かにChrome 68の登場により、HTTPSではなくHTTPをWebコンテンツの配信に利用し続ける企業が、ユーザーからの信用・信頼を損なうリスクが高まるのは、間違いありません。ですが、サイトの規模やつくりによっては慎重に対応を進める必要があります。これから常時SSL/TLS対応を検討ないし実施されるご予定のご担当者さま、常時SSL/TLS対応に関してお困りのことがあれば是非お気軽にご相談ください。</p></div>
+<div class="nav_archive_1">
+<ul>
+<li class="prev"><a href="39.html"><span class="mark">前の記事へ</span>2018年の企業動画活用トレンド</a></li>
+<li class="next"><a href="48.html"><span class="mark">次の記事へ</span>Web品質管理「Web Checker」サービスリリースに寄せて</a></li>
+</ul>
+</div>
+
+<div class="nav_back_1"><a href="/knowledge/column/2019.html"><span class="text">2019年のコラム一覧に戻る</span></a></div>
+
+<div class="nav_contact_1 mailnews">
+<p>メールニュースでは、本サイトの更新情報や業界動向などをお伝えしています。ぜひご購読ください。</p>
+<div class="button"><a href="/form/index.php?id=M2">メールニュース登録</a></div>
+</div>
+
+<!-- /#main_content --></div>
+<div id="local_nav">
+<nav>
+<ul class="adjacent_items">
+<li><a href="/knowledge/column/">コラム</a></li>
+<li><a href="/knowledge/blog/">Blog</a></li>
+<li><a href="/knowledge/colors/">広報誌「MITSUE COLORS」</a></li>
+<li><a href="https://www.mitsue.co.jp/form/index.php?id=M2">メールニュース</a></li>
+<li><a href="/knowledge/social_media_accounts.html">ソーシャルメディア 公式アカウント</a></li>
+<li><a href="/knowledge/marketing/">Webマーケティング資料集</a></li>
+<li><a href="/knowledge/glossary.html">用語集</a></li>
+</ul>
+</nav>
+</div>
+<!-- /#content --></main>
+
+<footer>
+<div class="footer_content">
+<dl>
+<dt>信頼を支えるマネジメントシステム</dt>
+<dd><ul><li><img src="/cmn/img/iso.png" alt="品質マネジメントシステム ANAB BSI FS559479/ISO9001 情報セキュリティマネジメントシステム ANAB BSI ISMS IS60384/ISO27001（認証取得事業所：本社およびスタジオ）"></li><li><a href="https://privacymark.jp/" class="privacy"><img src="/cmn/img/p_mark.png" alt="プライバシーマーク 10820129(09)"></a></li></ul></dd>
+</dl>
+<ul class="banner">
+<li><a href="https://videocenter.mitsue.co.jp/" class="videocenter"><img src="/cmn/img/banner_videocenter.gif" alt="ミツエーリンクスの動画ポータルサイト Video Center"></a></li>
+<li><a href="https://www.w3.org/Consortium/Member/Testimonial/Home/home-899" class="w3c"><img src="/cmn/img/w3c.png" alt="ミツエーリンクスはW3Cの会員です。"></a></li>
+</ul>
+<ul class="utility">
+<li class="privacy_policy"><a href="/privacy_policy.html">プライバシーポリシー</a></li>
+<li class="site_policy"><a href="/site_policy.html">サイトポリシー</a></li>
+<li class="help"><a href="/help/">ヘルプ</a></li>
+<li class="contact"><a href="/contact/">お問い合わせ</a></li>
+</ul>
+<small class="copyright">&copy; Mitsue-Links Co.,Ltd.</small>
+</div>
+</footer>
+
+<script src="/cmn/js/mjl.js"></script>
+<script src="/cmn/js/run.js"></script>
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+
+</body>
+</html>

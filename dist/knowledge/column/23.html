@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="ミツエーリンクスのコラム「{{TITLE}}}」です。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}} | コラム | ミツエーリンクス</title>
+<link rel="stylesheet" href="/cmn/css/basic.css" media="screen,print">
+<link rel="stylesheet" href="/cmn/css/print.css" media="print">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="knowledge">
+
+<header>
+<div class="header_content" itemscope itemtype="http://schema.org/Corporation">
+<a href="/" id="logo" itemprop="url"><img src="/cmn/img/logo.png" alt="ミツエーリンクス" itemprop="logo"></a>
+<div class="management_ideology">Smart Communication Design Company</div>
+<form method="get" action="/search/index.php"><label for="site_search">サイト内検索</label><input type="text" maxlength="100" name="keyword" id="site_search"><button type="submit" id="btn_site_search"><img src="/cmn/img/btn_search.png" alt="検索"></button><input type="hidden" name="start" value="1"></form>
+<nav>
+<ul class="utility">
+<li class="home"><a href="/">ホーム</a></li><li class="sitemap"><a href="/sitemap/">サイトマップ</a></li><li class="contact"><a href="/contact/">お問い合わせ</a></li><li class="lang"><a href="/english/" lang="en" hreflang="en">English</a></li>
+</ul>
+<ul class="global_nav" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+<li itemprop="name" class="service"><a itemprop="url" href="/service/">サービス</a></li>
+<li itemprop="name" class="our_work"><a itemprop="url" href="/our_work/">実績紹介</a></li>
+<li itemprop="name" class="knowledge"><em aria-current="true"><a itemprop="url" href="/knowledge/">ナレッジ</a></em></li>
+<li itemprop="name" class="seminar"><a itemprop="url" href="/seminar/">セミナー</a></li>
+<li itemprop="name" class="news"><a itemprop="url" href="/news/">ニュース</a></li>
+<li itemprop="name" class="company"><a itemprop="url" href="/company/">会社情報</a></li>
+<li itemprop="name" class="careers"><a itemprop="url" href="/careers/">採用情報</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="content">
+<div itemprop="breadcrumb" class="topic_path"><a href="/"><img src="/cmn/img/icon_home.gif" alt="ホーム"></a> &gt; <a href="/knowledge/">ナレッジ</a> &gt; <a href="/knowledge/column/">コラム</a> &gt; <a href="/knowledge/column/2019.html">2019年</a> &gt; <em aria-current="page">これからの企業サイト向け　Web基盤の選び方</em></div>
+<div id="main_content">
+
+<h1 class="hdg_l1_1">これからの企業サイト向け　Web基盤の選び方</h1>
+
+<div class="column_meta_2">
+<div class="date">2017年10月13日</div>
+<div class="writer">システム本部　第二部　マネージャー<br>榛葉 裕幸</div>
+</div>
+
+<div><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">昨今のリニューアルプロジェクトでは、コミュニケーションツールとしてWebサイト再構築に取り組むのはもちろんのこと、CMS&#xff08;コンテンツ管理システム&#xff09;やサーバーインフラといったWebサイトを運営する仕組み&#xff1d;”Web基盤”の再構築も重要なテーマになっています。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">本コラムでは、サイトリニューアルをご検討中の皆さまに、いま多くの組織がリニューアルプロジェクトを機にWeb基盤をリプレースする背景と、企業サイトに求められるWeb基盤のポイントをご紹介します。</p><h2 class="user-token-hdg_l2_1" style="margin:0px 0px 18px;padding:5px 15px;border-radius:4px;background:rgb( 235 , 235 , 235 );font-size:1.125em;font-weight:bold">どうする、企業Webの“野良サイト”</h2><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">企業のクラウド利用が一般的となるなか、クラウド上に放置された、管理不行き届きの仮想サーバー&#xff1d;“野良サーバー”が、セキュリティの問題を引き起こしかねない存在として話題です<sup style="margin:0px;padding:0px">※1</sup>。管理されていないサーバーやCMSなどのWebアプリケーションは、不正アクセスによる情報漏えいや第三者への不正アクセスの踏み台となるなど大変危険です。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">実は、企業が開設し運営するWebサイトにおいても、管理者が存在せずに放置されたWebサイト、まさに“野良サイト”が以前から問題になっています。消費者やステークホルダーとのコミュニケーションをWeb起点で考えるのがあたり前になり、多くの企業が公式サイトだけでなく、ターゲットユーザーや用途の違いでさまざまなWeb媒体を開設し運営しています。そして、安価なホスティングサービスやオープンソースCMSの利用拡大など、専門的な知識なしに比較的容易にWebサイトを立ち上げることも可能となりました。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">開設するだけ、作るだけは容易になった反面、セキュリティ上の不備、作った後の運用・保守が考慮できていないなど、多くの企業でガバナンス面のルールや体制が追いつけていないのが実情です。最近の調査でも、企業の約半分は自社が管理すべきWebサイトすら把握できていない、という結果があります<sup style="margin:0px;padding:0px">※2</sup>。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">また、自社で管理すべきWebサイトのリスト化はできていても、個々のWebサイトで利用しているサーバー環境、CMSなどのソフトウェアの種類やバージョンを把握し、適切なメンテナンスまで実施できているのは、まだ一部の組織に限られます。例えば、CMS利用サイトの6割近くが脆弱性をかかえた古いバージョンのCMS利用、といった調査結果もあります<sup style="margin:0px;padding:0px">※3</sup>。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">つまり、“守る以前に、守る対象すら把握できていない”というのが、多くの企業Webサイトの運営実態といえるでしょう。</p><ul class="user-token-list_notice_2" style="margin:0px 15px 15px;padding:0px;list-style-type:none"><li style="margin:0px 0px 3px;padding:0px 0px 0px 2.5em;font-size:0.7em;background:none"><span class="user-token-marker" style="margin:0px;padding:0px">※1</span>ITpro&#xff08;2017-07-31&#xff09;「<a href="http://itpro.nikkeibp.co.jp/atcl/watcher/16/110700001/072500042/" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">どうする、クラウドの“野良サーバー”</a>」</li><li style="margin:0px 0px 3px;padding:0px 0px 0px 2.5em;font-size:0.7em;background:none"><span class="user-token-marker" style="margin:0px;padding:0px">※2</span>NRIセキュアテクノロジーズ&#xff08;2016-08-18&#xff09;「サイバーセキュリティ傾向分析レポート2016」</li><li style="margin:0px 0px 3px;padding:0px 0px 0px 2.5em;font-size:0.7em;background:none"><span class="user-token-marker" style="margin:0px;padding:0px">※3</span>NRIセキュアテクノロジーズ&#xff08;2017-07-26&#xff09;「サイバーセキュリティ傾向分析レポート2017」</li></ul><h2 class="user-token-hdg_l2_1" style="margin:0px 0px 18px;padding:5px 15px;border-radius:4px;background:rgb( 235 , 235 , 235 );font-size:1.125em;font-weight:bold">ポイントは「インベントリ管理」と「パッチ適用容易性」</h2><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">それでは、どうすればよいのでしょうか。これからのWeb基盤が備えるべきポイントは「インベントリ管理」と「パッチ適用容易性」です。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">まず「インベントリ管理」とは、一般に組織が保有し管理するIT資産に関するリストのことです。企業のWebサイトにおいてもインベントリ管理の徹底が重要です。自社が管理すべきWebサイトがいくつあり、個々のWebサイトはどんなサーバー環境で、どんなソフトウェアを使っていて、そのバージョンが最新かどうかなどを管理できていないと、脆弱性などのセキュリティインシデントが発生しても対策が打てません。つまり、インベントリ管理は、企業のWebガバナンスを担保する基礎であり前提です。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">また、単にExcel管理台帳などでリスト化するだけでは不十分であり、インベントリ管理の実効性を担保するWeb基盤の整備が重要です。頻繁に発生するWebサイトの新設や改廃、ソフトウェアアップデートを個別にフォローし続けるのはムリがあります。近年、複数のWeb媒体を保有する組織では、共通のプラットフォームとCMSにすべてのWeb媒体を集約して一元管理することで、ガバナンス向上と維持にかかるコストの最適化に取り組む事例が増えています。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">次に「パッチ適用容易性」とは、セキュリティ専門家の徳丸浩さんが提唱しているコンセプト<sup style="margin:0px;padding:0px">※4</sup>ですが、ソフトウェアのバージョンアップやパッチ適用を容易にする事前の検討、設計が重要とされます。「パッチ適用容易性」の視点で、企業サイトのためのWeb基盤を整備する際に考慮すべきポイントは2つです。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">1つは、CMSなどWebサイトで利用するアプリケーションを選定する基準。脆弱性を修補するためにソフトウェアベンダーが提供するパッチ&#xff08;修正プログラム&#xff09;を適用するときに、ソフトウェア上で動作しているアドオン機能やカスタマイズ機能を含めた機能要素にできるだけ影響がでない製品、導入手法を採用することです。例えば、CMS製品のなかには、独自に作りこんだカスタマイズ箇所や第三者製造のアドオン機能が、パッチ適用後に動作しなくなる、といった不具合が発生することがあります。このような製品を採用してしまうと、パッチ適用のつど動作検証が必要となり、想定外のコストと時間が必要になります。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">もう1つは、システム構成を考える基準です。ソフトウェアにパッチを適用しても、エンドユーザーが閲覧するWebサイトそのものには影響がでないシステム構成とすることが重要です。例えば、CMSやサーバーのミドルウェアのアップデートのたびに、システム全体を停止しなければいけないような構成では、その間はWebサイトもクローズしなければいけません。そうしたシステム構成のまま、複数のWeb媒体を集約するならば、すべてのWeb媒体が利用停止に陥ることになります。自社の消費者やステークホルダーがサイト閲覧できないことは、企業にとっては機会損失です。</p><ul class="user-token-list_notice_2" style="margin:0px 15px 15px;padding:0px;list-style-type:none"><li style="margin:0px 0px 3px;padding:0px 0px 0px 2.5em;font-size:0.7em;background:none"><span class="user-token-marker" style="margin:0px;padding:0px">※4</span>徳丸浩&#xff08;2015-10-26&#xff09;『徳丸浩のWebセキュリティ教室』日経BP社</li></ul><h2 class="user-token-hdg_l2_1" style="margin:0px 0px 18px;padding:5px 15px;border-radius:4px;background:rgb( 235 , 235 , 235 );font-size:1.125em;font-weight:bold">これからのWebサイトリニューアルプロジェクトがわかる・学べる セミナーのお知らせ</h2><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">2017年11月10日に、「<a href="https://www.mitsue.co.jp/seminar/cms_renewal_2018.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">【CMSセミナー】成功事例に学ぶ&#xff01; 2018年サイトリニューアルの課題と対策</a>」を開催します。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">企業のWebサイト運営に適した、これからのWeb基盤 の詳細をお知りになりたい方は、ぜひご参加ください。ご好評につき、同じ内容で 11月10日&#xff08;金&#xff09;と 12月5日&#xff08;火&#xff09;の2回開催予定です。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">数多くのリニューアルプロジェクトの現場で見聞きした「リニューアルプロジェクトあるある」をご紹介しながら、イマドキの企業サイトリニューアルの最新手法からCMS乗り換えパターンまで、リニューアルプロジェクトを成功に導くベストプラクティスを解説いたします。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">また、国内トップクラスの導入実績を誇るCMS「<a href="https://www.mitsue.co.jp/service/system_development/cms/webrelease.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">WebRelease</a>」の製造元であるフレームワークスソフトウェア・桝室様をお迎えし、デモンストレーションや事例を交えて、企業サイトに最適なCMSソリューションをご紹介します。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">WebReleaseは、株式会社フレームワークスソフトウェアが開発した国産の企業向け商用CMSです。企業ウェブサイトの構築・運用に求められる機能をパッケージソフトウェアでご提供します。2000年7月の出荷開始以来、大手メーカーや金融機関、官公庁や大学など、680社を超えるお客様に採用されています。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em">ご多用かとは存じますが、皆さまのご参加を心よりお待ちしております。セミナー終了後の個別相談会も承ります。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em"><a href="https://www.mitsue.co.jp/seminar/cms_renewal_2018.html" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">今すぐ登録&#xff01;お申し込みはこちら&#xff08;参加無料・事前登録制&#xff09;</a></p></div>
+<div class="nav_archive_1">
+<ul>
+<li class="prev"><a href="6.html"><span class="mark">前の記事へ</span>CSUN 2017参加報告</a></li>
+<li class="next"><a href="30.html"><span class="mark">次の記事へ</span>「2018年のWebデザイントレンド 解説セミナー」のご案内</a></li>
+</ul>
+</div>
+
+<div class="nav_back_1"><a href="/knowledge/column/2019.html"><span class="text">2019年のコラム一覧に戻る</span></a></div>
+
+<div class="nav_contact_1 mailnews">
+<p>メールニュースでは、本サイトの更新情報や業界動向などをお伝えしています。ぜひご購読ください。</p>
+<div class="button"><a href="/form/index.php?id=M2">メールニュース登録</a></div>
+</div>
+
+<!-- /#main_content --></div>
+<div id="local_nav">
+<nav>
+<ul class="adjacent_items">
+<li><a href="/knowledge/column/">コラム</a></li>
+<li><a href="/knowledge/blog/">Blog</a></li>
+<li><a href="/knowledge/colors/">広報誌「MITSUE COLORS」</a></li>
+<li><a href="https://www.mitsue.co.jp/form/index.php?id=M2">メールニュース</a></li>
+<li><a href="/knowledge/social_media_accounts.html">ソーシャルメディア 公式アカウント</a></li>
+<li><a href="/knowledge/marketing/">Webマーケティング資料集</a></li>
+<li><a href="/knowledge/glossary.html">用語集</a></li>
+</ul>
+</nav>
+</div>
+<!-- /#content --></main>
+
+<footer>
+<div class="footer_content">
+<dl>
+<dt>信頼を支えるマネジメントシステム</dt>
+<dd><ul><li><img src="/cmn/img/iso.png" alt="品質マネジメントシステム ANAB BSI FS559479/ISO9001 情報セキュリティマネジメントシステム ANAB BSI ISMS IS60384/ISO27001（認証取得事業所：本社およびスタジオ）"></li><li><a href="https://privacymark.jp/" class="privacy"><img src="/cmn/img/p_mark.png" alt="プライバシーマーク 10820129(09)"></a></li></ul></dd>
+</dl>
+<ul class="banner">
+<li><a href="https://videocenter.mitsue.co.jp/" class="videocenter"><img src="/cmn/img/banner_videocenter.gif" alt="ミツエーリンクスの動画ポータルサイト Video Center"></a></li>
+<li><a href="https://www.w3.org/Consortium/Member/Testimonial/Home/home-899" class="w3c"><img src="/cmn/img/w3c.png" alt="ミツエーリンクスはW3Cの会員です。"></a></li>
+</ul>
+<ul class="utility">
+<li class="privacy_policy"><a href="/privacy_policy.html">プライバシーポリシー</a></li>
+<li class="site_policy"><a href="/site_policy.html">サイトポリシー</a></li>
+<li class="help"><a href="/help/">ヘルプ</a></li>
+<li class="contact"><a href="/contact/">お問い合わせ</a></li>
+</ul>
+<small class="copyright">&copy; Mitsue-Links Co.,Ltd.</small>
+</div>
+</footer>
+
+<script src="/cmn/js/mjl.js"></script>
+<script src="/cmn/js/run.js"></script>
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+
+</body>
+</html>

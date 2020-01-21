@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="ミツエーリンクスのコラム「{{TITLE}}}」です。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}} | コラム | ミツエーリンクス</title>
+<link rel="stylesheet" href="/cmn/css/basic.css" media="screen,print">
+<link rel="stylesheet" href="/cmn/css/print.css" media="print">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="knowledge">
+
+<header>
+<div class="header_content" itemscope itemtype="http://schema.org/Corporation">
+<a href="/" id="logo" itemprop="url"><img src="/cmn/img/logo.png" alt="ミツエーリンクス" itemprop="logo"></a>
+<div class="management_ideology">Smart Communication Design Company</div>
+<form method="get" action="/search/index.php"><label for="site_search">サイト内検索</label><input type="text" maxlength="100" name="keyword" id="site_search"><button type="submit" id="btn_site_search"><img src="/cmn/img/btn_search.png" alt="検索"></button><input type="hidden" name="start" value="1"></form>
+<nav>
+<ul class="utility">
+<li class="home"><a href="/">ホーム</a></li><li class="sitemap"><a href="/sitemap/">サイトマップ</a></li><li class="contact"><a href="/contact/">お問い合わせ</a></li><li class="lang"><a href="/english/" lang="en" hreflang="en">English</a></li>
+</ul>
+<ul class="global_nav" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+<li itemprop="name" class="service"><a itemprop="url" href="/service/">サービス</a></li>
+<li itemprop="name" class="our_work"><a itemprop="url" href="/our_work/">実績紹介</a></li>
+<li itemprop="name" class="knowledge"><em aria-current="true"><a itemprop="url" href="/knowledge/">ナレッジ</a></em></li>
+<li itemprop="name" class="seminar"><a itemprop="url" href="/seminar/">セミナー</a></li>
+<li itemprop="name" class="news"><a itemprop="url" href="/news/">ニュース</a></li>
+<li itemprop="name" class="company"><a itemprop="url" href="/company/">会社情報</a></li>
+<li itemprop="name" class="careers"><a itemprop="url" href="/careers/">採用情報</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="content">
+<div itemprop="breadcrumb" class="topic_path"><a href="/"><img src="/cmn/img/icon_home.gif" alt="ホーム"></a> &gt; <a href="/knowledge/">ナレッジ</a> &gt; <a href="/knowledge/column/">コラム</a> &gt; <a href="/knowledge/column/2019.html">2019年</a> &gt; <em aria-current="page">進むレンダリングエンジンの寡占化に想う</em></div>
+<div id="main_content">
+
+<h1 class="hdg_l1_1">進むレンダリングエンジンの寡占化に想う</h1>
+
+<div class="column_meta_2">
+<div class="date">2018年12月11日</div>
+<div class="writer">取締役兼CTO<br>木達 一仁</div>
+</div>
+
+<div><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">Microsoftの開発するデスクトップ向けWebブラウザ、Microsoft Edge&#xff08;以下「Edge」&#xff09;がChromiumベースに移行することが発表されました&#xff08;<a href="https://blogs.windows.com/japan/2018/12/11/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">Microsoft Edge: オープンソースとの協調で Web をより良いものに - Windows Blog for JapanWindows Blog for Japan</a>&#xff09;。Chromiumとはオープンソースプロジェクトの名前であり、世界中で高いシェアを誇るGoogle Chrome&#xff08;以下「Chrome」&#xff09;は、Chromiumベースのブラウザの一つです。移行に伴い、Edgeのレンダリングエンジン&#xff08;コンテンツの表示を制御するソフトウェア部品&#xff09;は、自社製のEdgeHTMLからChromeと同じBlinkに変更される予定です。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">ブラウザベンダーを自動車メーカー、Webブラウザを車、レンダリングエンジンを車のエンジンに例えるなら、今後Edgeという車種は残るものの、エンジンがMicrosoft製からChromium製に変更され、結果として別のメーカーであるGoogleのChromeという車種と基本性能が同じになる、と表現できます。果たしてこの発表は、Webサイトの構築・運用を手がける私たちにどのような影響をもたらすでしょうか&#xff1f;</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">もとよりEdgeのシェアは高くはなく、短期的には移行がもたらし得るWeb全体への影響は軽微と考えられます。具体的には、検証環境の一つにEdgeを含めたプロジェクトで、Edgeを使った画面確認をChromeによる画面確認に一元化することが可能となり、その前提において制作や検品業務などの効率化というメリットが期待できます&#xff08;移行後のEdgeのリリース頻度次第でもありますが&#xff09;。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">しかし、中長期的にはどうでしょう&#xff1f;　Webがその誕生以来、今日あるまで急速に普及してきた要因の一つに、プラットフォームやデバイスを問わず連携を可能にする、相互運用性という特性がありました。そしてその特性を担保してきたのは、ブラウザベンダーに一貫したWeb標準への準拠という姿勢であり、ムーブメントであったと私は理解しています。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">シェアの獲得競争や経済合理性を背景として、ブラウザベンダーなりレンダリングエンジンの数が減少することにより、競争機会が損なわれ技術的進歩が抑制され得るほか、標準が蔑ろにされ結果的に相互運用性が損なわれかねません。Webというプラットフォーム上でビジネスを展開している私たちにとって、それは由々しき事態のはずです。EdgeのChromiumベースへの移行には、そのような事態が現実のものとなる懸念を覚えます。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">もちろん、上述の懸念が杞憂に終わることを私は願っています。しかし、5年前に自社製のレンダリングエンジンの開発を止め、同じChromiumベースに移行したOperaに続く形での今回の発表だけに、悲観的にもなります。今や独立系ブラウザベンダーとしての期待を一身に集めるMozillaのFirefoxは、デスクトップでこそ一定のシェアを保っているものの、モバイルに目を移せば、WebKitとそこから派生したBlinkという二大レンダリングエンジン&#xff08;を積んだブラウザ&#xff09;が、シェアの大半を握っている状況です。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">つまり、レンダリングエンジンに関して言えば、今回のEdgeに関する発表より遥か前から寡占状態にありました。それは裏を返せば、レンダリングエンジンという特殊なソフトウェアの開発やメンテナンスにかかるコストが、Web技術の進化によって必然的に膨れ上がってしまった結果かもしれません。仮にそれが事実だったとして、新しいレンダリングエンジンの登場はもはや見込めないことになりますが、それでWebプラットフォームに今後、健全な発展を期待できるのでしょうか。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">レンダリングエンジンというレイヤーでは、確かに今ある以上の選択肢なり多様性を期待することの難しい状況ですが、それに反してWebを利用するユーザー、Webにアクセスするデバイスは多様化し続けています。当然、ユーザーとデバイスの掛け合わせとしてのコンテキスト&#xff08;利用状況&#xff09;も、飛躍的に多様化し続けています。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">折しも、今年の年末までに世界人口の半数がインターネットを利用する状況を迎えるとのニュースがありました&#xff08;<a href="https://www.itu.int/en/mediacentre/Pages/2018-PR40.aspx" style="margin:0px;padding:0px;color:rgb( 81 , 64 , 184 )" rel="nofollow">ITU releases 2018 global and regional ICT estimates / For the first time, more than half of the world&#39;s population is using the Internet</a>&#xff09;。インターネットとWebは同義ではありませんが、今後ますます世界中で多くの人々がWebを活用することに疑いの余地はありません。レンダリングエンジンの寡占化が経済合理性に基づく不可逆変化であったなら、Webにアクセスするユーザー/デバイス/コンテキストの多様化もまた然りです。</p><p style="margin:0px 15px 15px;padding:0px;font-size:0.8125em;color:rgb( 34 , 34 , 34 );font-family:&#39;メイリオ&#39; , &#39;meiryo&#39; , , &#39;hiragino kaku gothic pro&#39; , , sans-serif">Webというプラットフォーム上でビジネスを行う私たちには、そうした多様化に応え、コンテンツへのアクセシビリティを提供し続ける責務があるのではないでしょうか。そのためにも私たちは今まで以上にWeb標準を必要とし、Webの相互運用性の確保に取り組むべきだと思いますし、また実際にできることから具体的な行動を起こしたいと私は思います。</p></div>
+<div class="nav_archive_1">
+<ul>
+<li class="prev"><a href="51.html"><span class="mark">前の記事へ</span>Blog記事アクセスランキング（2018年度上半期）</a></li>
+<li class="next"><a href="56.html"><span class="mark">次の記事へ</span>ユーザーの声を取り入れたサイト改善とは</a></li>
+</ul>
+</div>
+
+<div class="nav_back_1"><a href="/knowledge/column/2019.html"><span class="text">2019年のコラム一覧に戻る</span></a></div>
+
+<div class="nav_contact_1 mailnews">
+<p>メールニュースでは、本サイトの更新情報や業界動向などをお伝えしています。ぜひご購読ください。</p>
+<div class="button"><a href="/form/index.php?id=M2">メールニュース登録</a></div>
+</div>
+
+<!-- /#main_content --></div>
+<div id="local_nav">
+<nav>
+<ul class="adjacent_items">
+<li><a href="/knowledge/column/">コラム</a></li>
+<li><a href="/knowledge/blog/">Blog</a></li>
+<li><a href="/knowledge/colors/">広報誌「MITSUE COLORS」</a></li>
+<li><a href="https://www.mitsue.co.jp/form/index.php?id=M2">メールニュース</a></li>
+<li><a href="/knowledge/social_media_accounts.html">ソーシャルメディア 公式アカウント</a></li>
+<li><a href="/knowledge/marketing/">Webマーケティング資料集</a></li>
+<li><a href="/knowledge/glossary.html">用語集</a></li>
+</ul>
+</nav>
+</div>
+<!-- /#content --></main>
+
+<footer>
+<div class="footer_content">
+<dl>
+<dt>信頼を支えるマネジメントシステム</dt>
+<dd><ul><li><img src="/cmn/img/iso.png" alt="品質マネジメントシステム ANAB BSI FS559479/ISO9001 情報セキュリティマネジメントシステム ANAB BSI ISMS IS60384/ISO27001（認証取得事業所：本社およびスタジオ）"></li><li><a href="https://privacymark.jp/" class="privacy"><img src="/cmn/img/p_mark.png" alt="プライバシーマーク 10820129(09)"></a></li></ul></dd>
+</dl>
+<ul class="banner">
+<li><a href="https://videocenter.mitsue.co.jp/" class="videocenter"><img src="/cmn/img/banner_videocenter.gif" alt="ミツエーリンクスの動画ポータルサイト Video Center"></a></li>
+<li><a href="https://www.w3.org/Consortium/Member/Testimonial/Home/home-899" class="w3c"><img src="/cmn/img/w3c.png" alt="ミツエーリンクスはW3Cの会員です。"></a></li>
+</ul>
+<ul class="utility">
+<li class="privacy_policy"><a href="/privacy_policy.html">プライバシーポリシー</a></li>
+<li class="site_policy"><a href="/site_policy.html">サイトポリシー</a></li>
+<li class="help"><a href="/help/">ヘルプ</a></li>
+<li class="contact"><a href="/contact/">お問い合わせ</a></li>
+</ul>
+<small class="copyright">&copy; Mitsue-Links Co.,Ltd.</small>
+</div>
+</footer>
+
+<script src="/cmn/js/mjl.js"></script>
+<script src="/cmn/js/run.js"></script>
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+
+</body>
+</html>
